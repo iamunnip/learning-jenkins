@@ -20,7 +20,7 @@ services:
       - JENKINS_SECRET=${JENKINS_SECRET}
       - JENKINS_AGENT_NAME=jenkins-agent
     volumes:
-      - /var/run/docker.sock:/var/run/docker.sock:ro
+      - /var/run/docker.sock:/var/run/docker.sock
       - jenkins-data:/home/jenkins
     networks:
       - jenkins
